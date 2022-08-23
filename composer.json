@@ -1,0 +1,12 @@
+{
+    "name": "smile/magento2-smilelab-phpstan",
+    "type": "library",
+    "license": "OSL-3.0",
+    "description": "PHPStan Coding standards for Smile Lab Magento2 community projects.",
+    "homepage": "https://github.com/Smile-SA/magento2-smilelab-phpstan",
+    "keywords": [
+        "php",
+        "phpstan",
+        "coding standards"
+    ]
+}
