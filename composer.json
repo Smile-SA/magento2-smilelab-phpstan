@@ -8,5 +8,34 @@
         "php",
         "phpstan",
         "coding standards"
-    ]
+    ],
+    "autoload": {
+        "psr-4": {
+            "Smile\\PhpStan\\": "src/"
+        }
+    },
+    "require": {
+        "magento/framework": "*",
+        "phpstan/phpstan": "^0.12 || ^1.0",
+        "squizlabs/php_codesniffer": "^3.5"
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://repo.magento.com/"
+        }
+    ],
+    "config": {
+        "allow-plugins": {
+            "magento/composer-dependency-version-audit-plugin": true
+        },
+        "sort-packages": true
+    },
+    "extra": {
+        "phpstan": {
+            "includes": [
+                "extension.neon"
+            ]
+        }
+    }
 }
