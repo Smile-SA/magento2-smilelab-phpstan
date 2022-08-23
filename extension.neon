@@ -1,0 +1,17 @@
+parameters:
+    checkMissingIterableValueType: false
+    checkGenericClassInNonGenericObjectType: false
+    checkExplicitMixedMissingReturn: true
+    checkPhpDocMissingReturn: true
+    bootstrapFiles:
+        - src/autoload.php
+
+services:
+    magicMethod:
+        class: Smile\PhpStan\Reflection\Php\DataObjectClassReflectionExtension
+        tags: {phpstan.broker.methodsClassReflectionExtension: {priority: 100}}
+
+    errorFormatter.filtered:
+        class: Smile\PhpStan\Formatters\FilteredErrorFormatter
+        arguments:
+            tableErrorFormatter: @errorFormatter.table

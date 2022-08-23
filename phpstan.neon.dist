@@ -1,0 +1,9 @@
+parameters:
+    level: 6
+    paths:
+        - src
+    checkMissingIterableValueType: false
+    checkGenericClassInNonGenericObjectType: false
+    ignoreErrors:
+        - '#Creating new [a-zA-Z\\]+ is not covered by backward compatibility promise.#'
+        - '#Calling [a-zA-Z\\]+::[a-zA-Z]+\(\) is not covered by backward compatibility promise.#'
