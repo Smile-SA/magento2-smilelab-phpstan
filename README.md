@@ -1,10 +1,25 @@
-# Smile Lab PHPStan Coding Standards
+# PHPStan Magento Extension
 
-These coding standards are meant to be used on any community project made by Smile Lab.
+## Description
 
-First, you need to create a phpstan configuration file in your root project directory : 
+This extension allows to analyse Magento modules with PHPStan.
+
+The src folder is copied from `https://github.com/magento/magento2/tree/2.4.4/dev/tests/static/framework/Magento/PhpStan`.
+
+## Installation
+
+To use this extension, require it in composer:
+
+```
+composer require --dev smile/magento2-smilelab-phpstan
+```
+
+## Configuration
+
+Create a configuration file named`phpstan.neon.dist` at the root of your module.
+For example:
+
 ```neon
-# phpstan.neon.dist
 parameters:
     level: 6
     checkMissingIterableValueType: false
@@ -12,9 +27,19 @@ parameters:
         - 'vendor/*'
 ```
 
-You can run the phpstan analysis with this command :
-```bash
-php ./vendor/bin/phpstan analyze [src folder]
+If you also install phpstan/extension-installer then you're all set!
+
+Otherwise, add the following configuration to this file:
+
+```neon
+includes:
+    - vendor/smile/magento2-smilelab-phpstan/extension.neon
 ```
 
-Please note that the src folder is copied from `https://github.com/magento/magento2/tree/2.4.4/dev/tests/static/framework/Magento/PhpStan`. Only the namespace has been changed. We have copied these source files in order to avoid to depend on the Magento sources to run these checks.
+## Usage
+
+You can run the phpstan analysis with this command:
+
+```bash
+vendor/bin/phpstan analyse [src folder]
+```
