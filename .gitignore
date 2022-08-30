@@ -1,5 +1,4 @@
-# Standard composer ignored paths
+/vendor
 /composer.lock
-/vendor/
 /phpcs.xml
 /phpstan.neon
