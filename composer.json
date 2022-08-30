@@ -15,6 +15,7 @@
         }
     },
     "require": {
+        "php": "^7.3 || ^8.0",
         "magento/framework": "*",
         "phpstan/phpstan": "^0.12 || ^1.0",
         "squizlabs/php_codesniffer": "^3.5"
