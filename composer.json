@@ -1,36 +1,30 @@
 {
     "name": "smile/magento2-smilelab-phpstan",
-    "type": "library",
+    "description": "PHPStan extension for Magento projects.",
+    "type": "phpstan-extension",
     "license": "OSL-3.0",
-    "description": "PHPStan Coding standards for Smile Lab Magento2 community projects.",
-    "homepage": "https://github.com/Smile-SA/magento2-smilelab-phpstan",
-    "keywords": [
-        "php",
-        "phpstan",
-        "coding standards"
-    ],
-    "autoload": {
-        "psr-4": {
-            "Smile\\PhpStan\\": "src/"
+    "authors": [
+        {
+            "name": "Smile Community of Practice",
+            "homepage": "https://www.smile.eu"
         }
-    },
+    ],
     "require": {
-        "php": "^7.3 || ^8.0",
+        "php": "^7.4 || ^8.0",
         "magento/framework": "*",
         "phpstan/phpstan": "^0.12 || ^1.0",
         "squizlabs/php_codesniffer": "^3.5"
     },
-    "repositories": [
-        {
-            "type": "composer",
-            "url": "https://repo.magento.com/"
-        }
-    ],
     "config": {
         "allow-plugins": {
             "magento/composer-dependency-version-audit-plugin": true
         },
         "sort-packages": true
+    },
+    "autoload": {
+        "psr-4": {
+            "Smile\\PhpStan\\": "src/"
+        }
     },
     "extra": {
         "phpstan": {
@@ -38,5 +32,11 @@
                 "extension.neon"
             ]
         }
-    }
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://repo.magento.com/"
+        }
+    ]
 }
