@@ -7,9 +7,14 @@ parameters:
         - src/autoload.php
 
 services:
-    magicMethod:
+    -
         class: Smile\PhpStan\Reflection\Php\DataObjectClassReflectionExtension
         tags: {phpstan.broker.methodsClassReflectionExtension: {priority: 100}}
+
+    -
+        class: Smile\PhpStan\Type\Php\TranslationFunctionReturnTypeExtension
+        tags:
+            - phpstan.broker.dynamicFunctionReturnTypeExtension
 
     errorFormatter.filtered:
         class: Smile\PhpStan\Formatters\FilteredErrorFormatter
