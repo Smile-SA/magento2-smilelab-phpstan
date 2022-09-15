@@ -16,15 +16,34 @@ composer require --dev smile/magento2-smilelab-phpstan
 
 ## Configuration
 
-Create a configuration file named `phpstan.neon.dist` at the root of your module.
-For example:
+Create a configuration file named `phpstan.neon.dist` at the root of your project.
+
+Example for a Magento project:
 
 ```neon
 parameters:
     level: 6
     checkMissingIterableValueType: false
+    paths:
+        - app/code
+
+```
+
+Exemple for a community module:
+
+```neon
+parameters:
+    level: 6
+    checkMissingIterableValueType: false
+    phpVersion: {{min_php_version}}
     excludePaths:
         - 'vendor/*'
+```
+
+Where `{{min_php_version}}` is the minimum compatible version of PHP required by your module. For example, if the min version is PHP 7.4:
+
+```neon
+phpVersion: 70400
 ```
 
 If you also install phpstan/extension-installer then you're all set!
