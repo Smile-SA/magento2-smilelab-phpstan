@@ -10,7 +10,7 @@ The src folder is copied from `https://github.com/magento/magento2/tree/2.4.5/de
 
 To use this extension, require it in composer:
 
-```
+```shell
 composer require --dev smile/magento2-smilelab-phpstan
 ```
 
@@ -59,6 +59,6 @@ includes:
 
 You can run the phpstan analysis with this command:
 
-```bash
+```shell
 vendor/bin/phpstan analyse [src folder]
 ```
