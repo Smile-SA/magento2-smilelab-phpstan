@@ -1,10 +1,10 @@
-# PHPStan Magento Extension
+# SmileLab PHPStan Extension
 
 ## Description
 
-This extension allows to analyse Magento modules with PHPStan.
+This extension is meant to be used on Magento projects and modules.
 
-The src folder is copied from `https://github.com/magento/magento2/tree/2.4.4/dev/tests/static/framework/Magento/PhpStan`.
+The src folder is copied from `https://github.com/magento/magento2/tree/2.4.5/dev/tests/static/framework/Magento/PhpStan`.
 
 ## Installation
 
@@ -16,7 +16,7 @@ composer require --dev smile/magento2-smilelab-phpstan
 
 ## Configuration
 
-Create a configuration file named`phpstan.neon.dist` at the root of your module.
+Create a configuration file named `phpstan.neon.dist` at the root of your module.
 For example:
 
 ```neon
