@@ -7,15 +7,15 @@ parameters:
 
 services:
     -
-        class: Smile\PhpStan\Reflection\Php\DataObjectClassReflectionExtension
+        class: SmileLab\PhpStan\Reflection\Php\DataObjectClassReflectionExtension
         tags: {phpstan.broker.methodsClassReflectionExtension: {priority: 100}}
 
     -
-        class: Smile\PhpStan\Type\Php\TranslationFunctionReturnTypeExtension
+        class: SmileLab\PhpStan\Type\Php\TranslationFunctionReturnTypeExtension
         tags:
             - phpstan.broker.dynamicFunctionReturnTypeExtension
 
     errorFormatter.filtered:
-        class: Smile\PhpStan\Formatters\FilteredErrorFormatter
+        class: SmileLab\PhpStan\Formatters\FilteredErrorFormatter
         arguments:
             tableErrorFormatter: @errorFormatter.table

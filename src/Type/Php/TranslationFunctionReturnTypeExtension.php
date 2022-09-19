@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Smile\PhpStan\Type\Php;
+namespace SmileLab\PhpStan\Type\Php;
 
 use Magento\Framework\Phrase;
 use PhpParser\Node\Expr\FuncCall;
