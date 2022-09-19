@@ -7,7 +7,7 @@
 
 declare(strict_types=1);
 
-namespace Smile\PhpStan\Formatters;
+namespace SmileLab\PhpStan\Formatters;
 
 use PHPStan\Command\AnalysisResult;
 use PHPStan\Command\ErrorFormatter\ErrorFormatter;

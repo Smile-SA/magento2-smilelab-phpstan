@@ -7,7 +7,7 @@
 
 declare(strict_types=1);
 
-namespace Smile\PhpStan\Reflection\Php;
+namespace SmileLab\PhpStan\Reflection\Php;
 
 use PHPStan\Reflection\ClassMemberReflection;
 use PHPStan\Reflection\ClassReflection;

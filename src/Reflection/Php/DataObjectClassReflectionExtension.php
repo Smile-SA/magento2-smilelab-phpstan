@@ -7,7 +7,7 @@
 
 declare(strict_types=1);
 
-namespace Smile\PhpStan\Reflection\Php;
+namespace SmileLab\PhpStan\Reflection\Php;
 
 use Magento\Framework\DataObject;
 use Magento\Framework\Session\SessionManager;
