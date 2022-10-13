@@ -26,7 +26,6 @@ parameters:
     checkMissingIterableValueType: false
     paths:
         - app/code
-
 ```
 
 Exemple for a community module:
@@ -36,6 +35,8 @@ parameters:
     level: 6
     checkMissingIterableValueType: false
     phpVersion: {{min_php_version}}
+    paths:
+        - .
     excludePaths:
         - 'vendor/*'
 ```
@@ -60,5 +61,5 @@ includes:
 You can run the phpstan analysis with this command:
 
 ```shell
-vendor/bin/phpstan analyse [src folder]
+vendor/bin/phpstan analyse
 ```
