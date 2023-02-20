@@ -14,8 +14,3 @@ services:
         class: SmileLab\PhpStan\Type\Php\TranslationFunctionReturnTypeExtension
         tags:
             - phpstan.broker.dynamicFunctionReturnTypeExtension
-
-    errorFormatter.filtered:
-        class: SmileLab\PhpStan\Formatters\FilteredErrorFormatter
-        arguments:
-            tableErrorFormatter: @errorFormatter.table
