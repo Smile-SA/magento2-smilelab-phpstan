@@ -14,6 +14,7 @@ use Magento\Framework\TestFramework\Unit\Autoloader\ExtensionAttributesInterface
 use Magento\Framework\TestFramework\Unit\Autoloader\FactoryGenerator;
 use Magento\Framework\TestFramework\Unit\Autoloader\GeneratedClassesAutoloader;
 
+// Do not remove this line, it is required to properly detect factories that were defined manually
 require realpath(__DIR__ . '/../../../../') . '/vendor/squizlabs/php_codesniffer/autoload.php';
 
 if (!defined('GENERATED_TEMP_DIR')) {
