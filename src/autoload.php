@@ -14,6 +14,8 @@ use Magento\Framework\TestFramework\Unit\Autoloader\ExtensionAttributesInterface
 use Magento\Framework\TestFramework\Unit\Autoloader\FactoryGenerator;
 use Magento\Framework\TestFramework\Unit\Autoloader\GeneratedClassesAutoloader;
 
+require realpath(__DIR__ . '/../../../../') . '/vendor/squizlabs/php_codesniffer/autoload.php';
+
 if (!defined('GENERATED_TEMP_DIR')) {
     define('GENERATED_TEMP_DIR', dirname(__DIR__) . '/tmp');
 }
