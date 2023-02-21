@@ -47,7 +47,7 @@ class TranslationFunctionReturnTypeExtension implements DynamicFunctionReturnTyp
         FunctionReflection $functionReflection,
         FuncCall $functionCall,
         Scope $scope
-    ): ?Type {
+    ): Type {
         return new UnionType([new StringType(), new ObjectType(Phrase::class)]);
     }
 }

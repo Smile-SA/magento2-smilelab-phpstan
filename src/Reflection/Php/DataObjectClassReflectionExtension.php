@@ -2,7 +2,7 @@
 
 /**
  * Copied from magento.
- * @see https://github.com/magento/magento2/blob/2.4.4/dev/tests/static/framework/Magento/PhpStan/Reflection/Php/DataObjectClassReflectionExtension.php
+ * @see https://github.com/magento/magento2/blob/2.4.5/dev/tests/static/framework/Magento/PhpStan/Reflection/Php/DataObjectClassReflectionExtension.php
  */
 
 declare(strict_types=1);
