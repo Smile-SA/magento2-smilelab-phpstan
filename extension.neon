@@ -1,9 +1,12 @@
 parameters:
-    checkGenericClassInNonGenericObjectType: false
     checkExplicitMixedMissingReturn: true
     checkPhpDocMissingReturn: true
     bootstrapFiles:
         - src/autoload.php
+    ignoreErrors:
+        -
+            identifier: missingType.generics
+            reportUnmatched: false
 
 services:
     -
