@@ -19,6 +19,9 @@
         "allow-plugins": {
             "magento/composer-dependency-version-audit-plugin": true
         },
+        "audit": {
+            "abandoned": "report"
+        },
         "sort-packages": true
     },
     "autoload": {
