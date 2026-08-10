@@ -28,7 +28,7 @@ use PHPStan\Type\UnionType;
 use PHPStan\Type\VoidType;
 
 /**
- * @SuppressWarnings(PHPMD.CouplingBetweenObjects)
+ * @SuppressWarnings("PHPMD.CouplingBetweenObjects")
  */
 class DataObjectMethodReflection implements MethodReflection
 {
