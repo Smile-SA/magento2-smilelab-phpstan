@@ -23,7 +23,6 @@ Example for a Magento project:
 ```neon
 parameters:
     level: 6
-    checkMissingIterableValueType: false
     paths:
         - app/code
 ```
@@ -33,7 +32,6 @@ Exemple for a community module:
 ```neon
 parameters:
     level: 6
-    checkMissingIterableValueType: false
     phpVersion: {{min_php_version}}
     paths:
         - .
@@ -41,10 +39,10 @@ parameters:
         - 'vendor/*'
 ```
 
-Where `{{min_php_version}}` is the minimum compatible version of PHP required by your module. For example, if the min version is PHP 7.4:
+Where `{{min_php_version}}` is the minimum compatible version of PHP required by your module. For example, if the min version is PHP 8.5:
 
 ```neon
-phpVersion: 70400
+phpVersion: 80500
 ```
 
 If you also install phpstan/extension-installer then you're all set!
