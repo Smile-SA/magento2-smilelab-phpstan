@@ -4,6 +4,11 @@ parameters:
         - src
     ignoreErrors:
         -
-            identifier: missingType.iterableValue
-        - '#Creating new [a-zA-Z\\]+ is not covered by backward compatibility promise.#'
-        - '#Calling [a-zA-Z\\]+::[a-zA-Z]+\(\) is not covered by backward compatibility promise.#'
+            identifier: phpstanApi.constructor
+            path: src/Reflection/Php/DataObjectMethodReflection.php
+        -
+            identifier: phpstanApi.classConstant
+            path: src/Reflection/Php/DataObjectClassReflectionExtension.php
+        -
+            identifier: phpstanApi.method
+            path: src/Reflection/Php/DataObjectClassReflectionExtension.php
